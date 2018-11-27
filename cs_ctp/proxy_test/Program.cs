@@ -12,7 +12,7 @@ namespace HaiFeng
 		{
 			// investor, pwd, instrument, price for buy
 			TestTrade tt = null;
-			string investor = "008105", pwd = "1", inst = "rb1809";
+			string investor = "008105", pwd = "1", inst = "rb1905";
 			double price_for_buy = 3900;
 			if (args.Length == 4)
 			{
@@ -22,10 +22,10 @@ namespace HaiFeng
 				price_for_buy = double.Parse(args[3]);
 			}
 
-			tt = new TestTrade(investor, pwd, inst, price_for_buy);
-			tt.Run();
-			Console.WriteLine("Press any key to continue . . . ");
-			Console.ReadKey(true);
+			//tt = new TestTrade(investor, pwd, inst, price_for_buy);
+			//tt.Run();
+			//Console.WriteLine("Press any key to continue . . . ");
+			//Console.ReadKey(true);
 
 			TestQuote tq = new TestQuote(investor, pwd, inst);
 			tq.Run();

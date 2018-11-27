@@ -19,7 +19,7 @@ namespace HaiFeng
 			_pwd = pwd;
 			_inst = instrument;
 
-			_q = new CTPQuote(new FileInfo("../../../dll/ctp_quote.dll").FullName);
+			_q = new CTPQuote("ctp_quote");
 
 			_q.OnFrontConnected += _q_OnFrontConnected;
 			_q.OnRspUserLogin += _q_OnRspUserLogin;
@@ -53,13 +53,13 @@ namespace HaiFeng
 		{
 			if (e.Value == 0)
 			{
-				Log($"登录成功:{_investor}");
+				Log($"quote 登录成功:{_investor}");
 				_q.ReqSubscribeMarketData(_inst);
 			}
 			else
 			{
 				//_q.OnFrontConnected -= _q_OnFrontConnected;    //解决登录错误后不断重连导致再不断登录的错误
-				Log($"登录错误：{e.Value}");
+				Log($"quote 登录错误：{e.Value}");
 				_q.ReqUserLogout();
 			}
 		}
@@ -92,7 +92,7 @@ namespace HaiFeng
 			_pwd = pwd;
 			_inst = instrument;
 			_price = price;
-			_t = new CTPTrade(new FileInfo("../../../dll/ctp_trade.dll").FullName);
+			_t = new CTPTrade("ctp_trade");
 		}
 
 		public void Release()
