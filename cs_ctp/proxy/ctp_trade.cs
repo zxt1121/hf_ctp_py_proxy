@@ -31,86 +31,86 @@ namespace HaiFeng
 		public delegate IntPtr DeleGetTradingDay(IntPtr api);
 		public delegate IntPtr DeleRegisterFront(IntPtr api, string pszFrontAddress);
 		public delegate IntPtr DeleRegisterNameServer(IntPtr api, string pszNsAddress);
-		public delegate IntPtr DeleRegisterFensUserInfo(IntPtr api, CThostFtdcFensUserInfoField pFensUserInfo);
-		public delegate IntPtr DeleSubscribePrivateTopic(IntPtr api, THOST_TE_RESUME_TYPE nResumeType);
-		public delegate IntPtr DeleSubscribePublicTopic(IntPtr api, THOST_TE_RESUME_TYPE nResumeType);
-		public delegate IntPtr DeleReqAuthenticate(IntPtr api, CThostFtdcReqAuthenticateField pReqAuthenticateField, int nRequestID);
-		public delegate IntPtr DeleReqUserLogin(IntPtr api, CThostFtdcReqUserLoginField pReqUserLoginField, int nRequestID);
-		public delegate IntPtr DeleReqUserLogout(IntPtr api, CThostFtdcUserLogoutField pUserLogout, int nRequestID);
-		public delegate IntPtr DeleReqUserPasswordUpdate(IntPtr api, CThostFtdcUserPasswordUpdateField pUserPasswordUpdate, int nRequestID);
-		public delegate IntPtr DeleReqTradingAccountPasswordUpdate(IntPtr api, CThostFtdcTradingAccountPasswordUpdateField pTradingAccountPasswordUpdate, int nRequestID);
-		public delegate IntPtr DeleReqUserLogin2(IntPtr api, CThostFtdcReqUserLoginField pReqUserLogin, int nRequestID);
-		public delegate IntPtr DeleReqUserPasswordUpdate2(IntPtr api, CThostFtdcUserPasswordUpdateField pUserPasswordUpdate, int nRequestID);
-		public delegate IntPtr DeleReqOrderInsert(IntPtr api, CThostFtdcInputOrderField pInputOrder, int nRequestID);
-		public delegate IntPtr DeleReqParkedOrderInsert(IntPtr api, CThostFtdcParkedOrderField pParkedOrder, int nRequestID);
-		public delegate IntPtr DeleReqParkedOrderAction(IntPtr api, CThostFtdcParkedOrderActionField pParkedOrderAction, int nRequestID);
-		public delegate IntPtr DeleReqOrderAction(IntPtr api, CThostFtdcInputOrderActionField pInputOrderAction, int nRequestID);
-		public delegate IntPtr DeleReqQueryMaxOrderVolume(IntPtr api, CThostFtdcQueryMaxOrderVolumeField pQueryMaxOrderVolume, int nRequestID);
-		public delegate IntPtr DeleReqSettlementInfoConfirm(IntPtr api, CThostFtdcSettlementInfoConfirmField pSettlementInfoConfirm, int nRequestID);
-		public delegate IntPtr DeleReqRemoveParkedOrder(IntPtr api, CThostFtdcRemoveParkedOrderField pRemoveParkedOrder, int nRequestID);
-		public delegate IntPtr DeleReqRemoveParkedOrderAction(IntPtr api, CThostFtdcRemoveParkedOrderActionField pRemoveParkedOrderAction, int nRequestID);
-		public delegate IntPtr DeleReqExecOrderInsert(IntPtr api, CThostFtdcInputExecOrderField pInputExecOrder, int nRequestID);
-		public delegate IntPtr DeleReqExecOrderAction(IntPtr api, CThostFtdcInputExecOrderActionField pInputExecOrderAction, int nRequestID);
-		public delegate IntPtr DeleReqForQuoteInsert(IntPtr api, CThostFtdcInputForQuoteField pInputForQuote, int nRequestID);
-		public delegate IntPtr DeleReqQuoteInsert(IntPtr api, CThostFtdcInputQuoteField pInputQuote, int nRequestID);
-		public delegate IntPtr DeleReqQuoteAction(IntPtr api, CThostFtdcInputQuoteActionField pInputQuoteAction, int nRequestID);
-		public delegate IntPtr DeleReqBatchOrderAction(IntPtr api, CThostFtdcInputBatchOrderActionField pInputBatchOrderAction, int nRequestID);
-		public delegate IntPtr DeleReqOptionSelfCloseInsert(IntPtr api, CThostFtdcInputOptionSelfCloseField pInputOptionSelfClose, int nRequestID);
-		public delegate IntPtr DeleReqOptionSelfCloseAction(IntPtr api, CThostFtdcInputOptionSelfCloseActionField pInputOptionSelfCloseAction, int nRequestID);
-		public delegate IntPtr DeleReqCombActionInsert(IntPtr api, CThostFtdcInputCombActionField pInputCombAction, int nRequestID);
-		public delegate IntPtr DeleReqQryOrder(IntPtr api, CThostFtdcQryOrderField pQryOrder, int nRequestID);
-		public delegate IntPtr DeleReqQryTrade(IntPtr api, CThostFtdcQryTradeField pQryTrade, int nRequestID);
-		public delegate IntPtr DeleReqQryInvestorPosition(IntPtr api, CThostFtdcQryInvestorPositionField pQryInvestorPosition, int nRequestID);
-		public delegate IntPtr DeleReqQryTradingAccount(IntPtr api, CThostFtdcQryTradingAccountField pQryTradingAccount, int nRequestID);
-		public delegate IntPtr DeleReqQryInvestor(IntPtr api, CThostFtdcQryInvestorField pQryInvestor, int nRequestID);
-		public delegate IntPtr DeleReqQryTradingCode(IntPtr api, CThostFtdcQryTradingCodeField pQryTradingCode, int nRequestID);
-		public delegate IntPtr DeleReqQryInstrumentMarginRate(IntPtr api, CThostFtdcQryInstrumentMarginRateField pQryInstrumentMarginRate, int nRequestID);
-		public delegate IntPtr DeleReqQryInstrumentCommissionRate(IntPtr api, CThostFtdcQryInstrumentCommissionRateField pQryInstrumentCommissionRate, int nRequestID);
-		public delegate IntPtr DeleReqQryExchange(IntPtr api, CThostFtdcQryExchangeField pQryExchange, int nRequestID);
-		public delegate IntPtr DeleReqQryProduct(IntPtr api, CThostFtdcQryProductField pQryProduct, int nRequestID);
-		public delegate IntPtr DeleReqQryInstrument(IntPtr api, CThostFtdcQryInstrumentField pQryInstrument, int nRequestID);
-		public delegate IntPtr DeleReqQryDepthMarketData(IntPtr api, CThostFtdcQryDepthMarketDataField pQryDepthMarketData, int nRequestID);
-		public delegate IntPtr DeleReqQrySettlementInfo(IntPtr api, CThostFtdcQrySettlementInfoField pQrySettlementInfo, int nRequestID);
-		public delegate IntPtr DeleReqQryTransferBank(IntPtr api, CThostFtdcQryTransferBankField pQryTransferBank, int nRequestID);
-		public delegate IntPtr DeleReqQryInvestorPositionDetail(IntPtr api, CThostFtdcQryInvestorPositionDetailField pQryInvestorPositionDetail, int nRequestID);
-		public delegate IntPtr DeleReqQryNotice(IntPtr api, CThostFtdcQryNoticeField pQryNotice, int nRequestID);
-		public delegate IntPtr DeleReqQrySettlementInfoConfirm(IntPtr api, CThostFtdcQrySettlementInfoConfirmField pQrySettlementInfoConfirm, int nRequestID);
-		public delegate IntPtr DeleReqQryInvestorPositionCombineDetail(IntPtr api, CThostFtdcQryInvestorPositionCombineDetailField pQryInvestorPositionCombineDetail, int nRequestID);
-		public delegate IntPtr DeleReqQryCFMMCTradingAccountKey(IntPtr api, CThostFtdcQryCFMMCTradingAccountKeyField pQryCFMMCTradingAccountKey, int nRequestID);
-		public delegate IntPtr DeleReqQryEWarrantOffset(IntPtr api, CThostFtdcQryEWarrantOffsetField pQryEWarrantOffset, int nRequestID);
-		public delegate IntPtr DeleReqQryInvestorProductGroupMargin(IntPtr api, CThostFtdcQryInvestorProductGroupMarginField pQryInvestorProductGroupMargin, int nRequestID);
-		public delegate IntPtr DeleReqQryExchangeMarginRate(IntPtr api, CThostFtdcQryExchangeMarginRateField pQryExchangeMarginRate, int nRequestID);
-		public delegate IntPtr DeleReqQryExchangeMarginRateAdjust(IntPtr api, CThostFtdcQryExchangeMarginRateAdjustField pQryExchangeMarginRateAdjust, int nRequestID);
-		public delegate IntPtr DeleReqQryExchangeRate(IntPtr api, CThostFtdcQryExchangeRateField pQryExchangeRate, int nRequestID);
-		public delegate IntPtr DeleReqQrySecAgentACIDMap(IntPtr api, CThostFtdcQrySecAgentACIDMapField pQrySecAgentACIDMap, int nRequestID);
-		public delegate IntPtr DeleReqQryProductExchRate(IntPtr api, CThostFtdcQryProductExchRateField pQryProductExchRate, int nRequestID);
-		public delegate IntPtr DeleReqQryProductGroup(IntPtr api, CThostFtdcQryProductGroupField pQryProductGroup, int nRequestID);
-		public delegate IntPtr DeleReqQryMMInstrumentCommissionRate(IntPtr api, CThostFtdcQryMMInstrumentCommissionRateField pQryMMInstrumentCommissionRate, int nRequestID);
-		public delegate IntPtr DeleReqQryMMOptionInstrCommRate(IntPtr api, CThostFtdcQryMMOptionInstrCommRateField pQryMMOptionInstrCommRate, int nRequestID);
-		public delegate IntPtr DeleReqQryInstrumentOrderCommRate(IntPtr api, CThostFtdcQryInstrumentOrderCommRateField pQryInstrumentOrderCommRate, int nRequestID);
-		public delegate IntPtr DeleReqQrySecAgentTradingAccount(IntPtr api, CThostFtdcQryTradingAccountField pQryTradingAccount, int nRequestID);
-		public delegate IntPtr DeleReqQrySecAgentCheckMode(IntPtr api, CThostFtdcQrySecAgentCheckModeField pQrySecAgentCheckMode, int nRequestID);
-		public delegate IntPtr DeleReqQryOptionInstrTradeCost(IntPtr api, CThostFtdcQryOptionInstrTradeCostField pQryOptionInstrTradeCost, int nRequestID);
-		public delegate IntPtr DeleReqQryOptionInstrCommRate(IntPtr api, CThostFtdcQryOptionInstrCommRateField pQryOptionInstrCommRate, int nRequestID);
-		public delegate IntPtr DeleReqQryExecOrder(IntPtr api, CThostFtdcQryExecOrderField pQryExecOrder, int nRequestID);
-		public delegate IntPtr DeleReqQryForQuote(IntPtr api, CThostFtdcQryForQuoteField pQryForQuote, int nRequestID);
-		public delegate IntPtr DeleReqQryQuote(IntPtr api, CThostFtdcQryQuoteField pQryQuote, int nRequestID);
-		public delegate IntPtr DeleReqQryOptionSelfClose(IntPtr api, CThostFtdcQryOptionSelfCloseField pQryOptionSelfClose, int nRequestID);
-		public delegate IntPtr DeleReqQryInvestUnit(IntPtr api, CThostFtdcQryInvestUnitField pQryInvestUnit, int nRequestID);
-		public delegate IntPtr DeleReqQryCombInstrumentGuard(IntPtr api, CThostFtdcQryCombInstrumentGuardField pQryCombInstrumentGuard, int nRequestID);
-		public delegate IntPtr DeleReqQryCombAction(IntPtr api, CThostFtdcQryCombActionField pQryCombAction, int nRequestID);
-		public delegate IntPtr DeleReqQryTransferSerial(IntPtr api, CThostFtdcQryTransferSerialField pQryTransferSerial, int nRequestID);
-		public delegate IntPtr DeleReqQryAccountregister(IntPtr api, CThostFtdcQryAccountregisterField pQryAccountregister, int nRequestID);
-		public delegate IntPtr DeleReqQryContractBank(IntPtr api, CThostFtdcQryContractBankField pQryContractBank, int nRequestID);
-		public delegate IntPtr DeleReqQryParkedOrder(IntPtr api, CThostFtdcQryParkedOrderField pQryParkedOrder, int nRequestID);
-		public delegate IntPtr DeleReqQryParkedOrderAction(IntPtr api, CThostFtdcQryParkedOrderActionField pQryParkedOrderAction, int nRequestID);
-		public delegate IntPtr DeleReqQryTradingNotice(IntPtr api, CThostFtdcQryTradingNoticeField pQryTradingNotice, int nRequestID);
-		public delegate IntPtr DeleReqQryBrokerTradingParams(IntPtr api, CThostFtdcQryBrokerTradingParamsField pQryBrokerTradingParams, int nRequestID);
-		public delegate IntPtr DeleReqQryBrokerTradingAlgos(IntPtr api, CThostFtdcQryBrokerTradingAlgosField pQryBrokerTradingAlgos, int nRequestID);
-		public delegate IntPtr DeleReqQueryCFMMCTradingAccountToken(IntPtr api, CThostFtdcQueryCFMMCTradingAccountTokenField pQueryCFMMCTradingAccountToken, int nRequestID);
-		public delegate IntPtr DeleReqFromBankToFutureByFuture(IntPtr api, CThostFtdcReqTransferField pReqTransfer, int nRequestID);
-		public delegate IntPtr DeleReqFromFutureToBankByFuture(IntPtr api, CThostFtdcReqTransferField pReqTransfer, int nRequestID);
-		public delegate IntPtr DeleReqQueryBankAccountMoneyByFuture(IntPtr api, CThostFtdcReqQueryAccountField pReqQueryAccount, int nRequestID);
+		public delegate IntPtr DeleRegisterFensUserInfo(IntPtr api, ref CThostFtdcFensUserInfoField pFensUserInfo);
+		public delegate IntPtr DeleSubscribePrivateTopic(IntPtr api,ref THOST_TE_RESUME_TYPE nResumeType);
+		public delegate IntPtr DeleSubscribePublicTopic(IntPtr api, ref THOST_TE_RESUME_TYPE nResumeType);
+		public delegate IntPtr DeleReqAuthenticate(IntPtr api, ref CThostFtdcReqAuthenticateField pReqAuthenticateField, int nRequestID);
+		public delegate IntPtr DeleReqUserLogin(IntPtr api, ref CThostFtdcReqUserLoginField pReqUserLoginField, int nRequestID);
+		public delegate IntPtr DeleReqUserLogout(IntPtr api, ref CThostFtdcUserLogoutField pUserLogout, int nRequestID);
+		public delegate IntPtr DeleReqUserPasswordUpdate(IntPtr api, ref CThostFtdcUserPasswordUpdateField pUserPasswordUpdate, int nRequestID);
+		public delegate IntPtr DeleReqTradingAccountPasswordUpdate(IntPtr api, ref CThostFtdcTradingAccountPasswordUpdateField pTradingAccountPasswordUpdate, int nRequestID);
+		public delegate IntPtr DeleReqUserLogin2(IntPtr api, ref CThostFtdcReqUserLoginField pReqUserLogin, int nRequestID);
+		public delegate IntPtr DeleReqUserPasswordUpdate2(IntPtr api, ref CThostFtdcUserPasswordUpdateField pUserPasswordUpdate, int nRequestID);
+		public delegate IntPtr DeleReqOrderInsert(IntPtr api, ref CThostFtdcInputOrderField pInputOrder, int nRequestID);
+		public delegate IntPtr DeleReqParkedOrderInsert(IntPtr api, ref CThostFtdcParkedOrderField pParkedOrder, int nRequestID);
+		public delegate IntPtr DeleReqParkedOrderAction(IntPtr api, ref CThostFtdcParkedOrderActionField pParkedOrderAction, int nRequestID);
+		public delegate IntPtr DeleReqOrderAction(IntPtr api, ref CThostFtdcInputOrderActionField pInputOrderAction, int nRequestID);
+		public delegate IntPtr DeleReqQueryMaxOrderVolume(IntPtr api, ref CThostFtdcQueryMaxOrderVolumeField pQueryMaxOrderVolume, int nRequestID);
+		public delegate IntPtr DeleReqSettlementInfoConfirm(IntPtr api, ref CThostFtdcSettlementInfoConfirmField pSettlementInfoConfirm, int nRequestID);
+		public delegate IntPtr DeleReqRemoveParkedOrder(IntPtr api, ref CThostFtdcRemoveParkedOrderField pRemoveParkedOrder, int nRequestID);
+		public delegate IntPtr DeleReqRemoveParkedOrderAction(IntPtr api, ref CThostFtdcRemoveParkedOrderActionField pRemoveParkedOrderAction, int nRequestID);
+		public delegate IntPtr DeleReqExecOrderInsert(IntPtr api, ref CThostFtdcInputExecOrderField pInputExecOrder, int nRequestID);
+		public delegate IntPtr DeleReqExecOrderAction(IntPtr api, ref CThostFtdcInputExecOrderActionField pInputExecOrderAction, int nRequestID);
+		public delegate IntPtr DeleReqForQuoteInsert(IntPtr api, ref CThostFtdcInputForQuoteField pInputForQuote, int nRequestID);
+		public delegate IntPtr DeleReqQuoteInsert(IntPtr api, ref CThostFtdcInputQuoteField pInputQuote, int nRequestID);
+		public delegate IntPtr DeleReqQuoteAction(IntPtr api, ref CThostFtdcInputQuoteActionField pInputQuoteAction, int nRequestID);
+		public delegate IntPtr DeleReqBatchOrderAction(IntPtr api, ref CThostFtdcInputBatchOrderActionField pInputBatchOrderAction, int nRequestID);
+		public delegate IntPtr DeleReqOptionSelfCloseInsert(IntPtr api, ref CThostFtdcInputOptionSelfCloseField pInputOptionSelfClose, int nRequestID);
+		public delegate IntPtr DeleReqOptionSelfCloseAction(IntPtr api, ref CThostFtdcInputOptionSelfCloseActionField pInputOptionSelfCloseAction, int nRequestID);
+		public delegate IntPtr DeleReqCombActionInsert(IntPtr api, ref CThostFtdcInputCombActionField pInputCombAction, int nRequestID);
+		public delegate IntPtr DeleReqQryOrder(IntPtr api, ref CThostFtdcQryOrderField pQryOrder, int nRequestID);
+		public delegate IntPtr DeleReqQryTrade(IntPtr api, ref CThostFtdcQryTradeField pQryTrade, int nRequestID);
+		public delegate IntPtr DeleReqQryInvestorPosition(IntPtr api, ref CThostFtdcQryInvestorPositionField pQryInvestorPosition, int nRequestID);
+		public delegate IntPtr DeleReqQryTradingAccount(IntPtr api, ref CThostFtdcQryTradingAccountField pQryTradingAccount, int nRequestID);
+		public delegate IntPtr DeleReqQryInvestor(IntPtr api, ref CThostFtdcQryInvestorField pQryInvestor, int nRequestID);
+		public delegate IntPtr DeleReqQryTradingCode(IntPtr api, ref CThostFtdcQryTradingCodeField pQryTradingCode, int nRequestID);
+		public delegate IntPtr DeleReqQryInstrumentMarginRate(IntPtr api, ref CThostFtdcQryInstrumentMarginRateField pQryInstrumentMarginRate, int nRequestID);
+		public delegate IntPtr DeleReqQryInstrumentCommissionRate(IntPtr api, ref CThostFtdcQryInstrumentCommissionRateField pQryInstrumentCommissionRate, int nRequestID);
+		public delegate IntPtr DeleReqQryExchange(IntPtr api, ref CThostFtdcQryExchangeField pQryExchange, int nRequestID);
+		public delegate IntPtr DeleReqQryProduct(IntPtr api, ref CThostFtdcQryProductField pQryProduct, int nRequestID);
+		public delegate IntPtr DeleReqQryInstrument(IntPtr api, ref CThostFtdcQryInstrumentField pQryInstrument, int nRequestID);
+		public delegate IntPtr DeleReqQryDepthMarketData(IntPtr api, ref CThostFtdcQryDepthMarketDataField pQryDepthMarketData, int nRequestID);
+		public delegate IntPtr DeleReqQrySettlementInfo(IntPtr api, ref CThostFtdcQrySettlementInfoField pQrySettlementInfo, int nRequestID);
+		public delegate IntPtr DeleReqQryTransferBank(IntPtr api, ref CThostFtdcQryTransferBankField pQryTransferBank, int nRequestID);
+		public delegate IntPtr DeleReqQryInvestorPositionDetail(IntPtr api, ref CThostFtdcQryInvestorPositionDetailField pQryInvestorPositionDetail, int nRequestID);
+		public delegate IntPtr DeleReqQryNotice(IntPtr api, ref CThostFtdcQryNoticeField pQryNotice, int nRequestID);
+		public delegate IntPtr DeleReqQrySettlementInfoConfirm(IntPtr api, ref CThostFtdcQrySettlementInfoConfirmField pQrySettlementInfoConfirm, int nRequestID);
+		public delegate IntPtr DeleReqQryInvestorPositionCombineDetail(IntPtr api, ref CThostFtdcQryInvestorPositionCombineDetailField pQryInvestorPositionCombineDetail, int nRequestID);
+		public delegate IntPtr DeleReqQryCFMMCTradingAccountKey(IntPtr api, ref CThostFtdcQryCFMMCTradingAccountKeyField pQryCFMMCTradingAccountKey, int nRequestID);
+		public delegate IntPtr DeleReqQryEWarrantOffset(IntPtr api, ref CThostFtdcQryEWarrantOffsetField pQryEWarrantOffset, int nRequestID);
+		public delegate IntPtr DeleReqQryInvestorProductGroupMargin(IntPtr api, ref CThostFtdcQryInvestorProductGroupMarginField pQryInvestorProductGroupMargin, int nRequestID);
+		public delegate IntPtr DeleReqQryExchangeMarginRate(IntPtr api, ref CThostFtdcQryExchangeMarginRateField pQryExchangeMarginRate, int nRequestID);
+		public delegate IntPtr DeleReqQryExchangeMarginRateAdjust(IntPtr api, ref CThostFtdcQryExchangeMarginRateAdjustField pQryExchangeMarginRateAdjust, int nRequestID);
+		public delegate IntPtr DeleReqQryExchangeRate(IntPtr api, ref CThostFtdcQryExchangeRateField pQryExchangeRate, int nRequestID);
+		public delegate IntPtr DeleReqQrySecAgentACIDMap(IntPtr api, ref CThostFtdcQrySecAgentACIDMapField pQrySecAgentACIDMap, int nRequestID);
+		public delegate IntPtr DeleReqQryProductExchRate(IntPtr api, ref CThostFtdcQryProductExchRateField pQryProductExchRate, int nRequestID);
+		public delegate IntPtr DeleReqQryProductGroup(IntPtr api, ref CThostFtdcQryProductGroupField pQryProductGroup, int nRequestID);
+		public delegate IntPtr DeleReqQryMMInstrumentCommissionRate(IntPtr api, ref CThostFtdcQryMMInstrumentCommissionRateField pQryMMInstrumentCommissionRate, int nRequestID);
+		public delegate IntPtr DeleReqQryMMOptionInstrCommRate(IntPtr api, ref CThostFtdcQryMMOptionInstrCommRateField pQryMMOptionInstrCommRate, int nRequestID);
+		public delegate IntPtr DeleReqQryInstrumentOrderCommRate(IntPtr api, ref CThostFtdcQryInstrumentOrderCommRateField pQryInstrumentOrderCommRate, int nRequestID);
+		public delegate IntPtr DeleReqQrySecAgentTradingAccount(IntPtr api, ref CThostFtdcQryTradingAccountField pQryTradingAccount, int nRequestID);
+		public delegate IntPtr DeleReqQrySecAgentCheckMode(IntPtr api, ref CThostFtdcQrySecAgentCheckModeField pQrySecAgentCheckMode, int nRequestID);
+		public delegate IntPtr DeleReqQryOptionInstrTradeCost(IntPtr api, ref CThostFtdcQryOptionInstrTradeCostField pQryOptionInstrTradeCost, int nRequestID);
+		public delegate IntPtr DeleReqQryOptionInstrCommRate(IntPtr api, ref CThostFtdcQryOptionInstrCommRateField pQryOptionInstrCommRate, int nRequestID);
+		public delegate IntPtr DeleReqQryExecOrder(IntPtr api, ref CThostFtdcQryExecOrderField pQryExecOrder, int nRequestID);
+		public delegate IntPtr DeleReqQryForQuote(IntPtr api, ref CThostFtdcQryForQuoteField pQryForQuote, int nRequestID);
+		public delegate IntPtr DeleReqQryQuote(IntPtr api, ref CThostFtdcQryQuoteField pQryQuote, int nRequestID);
+		public delegate IntPtr DeleReqQryOptionSelfClose(IntPtr api, ref CThostFtdcQryOptionSelfCloseField pQryOptionSelfClose, int nRequestID);
+		public delegate IntPtr DeleReqQryInvestUnit(IntPtr api, ref CThostFtdcQryInvestUnitField pQryInvestUnit, int nRequestID);
+		public delegate IntPtr DeleReqQryCombInstrumentGuard(IntPtr api, ref CThostFtdcQryCombInstrumentGuardField pQryCombInstrumentGuard, int nRequestID);
+		public delegate IntPtr DeleReqQryCombAction(IntPtr api, ref CThostFtdcQryCombActionField pQryCombAction, int nRequestID);
+		public delegate IntPtr DeleReqQryTransferSerial(IntPtr api, ref CThostFtdcQryTransferSerialField pQryTransferSerial, int nRequestID);
+		public delegate IntPtr DeleReqQryAccountregister(IntPtr api, ref CThostFtdcQryAccountregisterField pQryAccountregister, int nRequestID);
+		public delegate IntPtr DeleReqQryContractBank(IntPtr api, ref CThostFtdcQryContractBankField pQryContractBank, int nRequestID);
+		public delegate IntPtr DeleReqQryParkedOrder(IntPtr api, ref CThostFtdcQryParkedOrderField pQryParkedOrder, int nRequestID);
+		public delegate IntPtr DeleReqQryParkedOrderAction(IntPtr api, ref CThostFtdcQryParkedOrderActionField pQryParkedOrderAction, int nRequestID);
+		public delegate IntPtr DeleReqQryTradingNotice(IntPtr api, ref CThostFtdcQryTradingNoticeField pQryTradingNotice, int nRequestID);
+		public delegate IntPtr DeleReqQryBrokerTradingParams(IntPtr api, ref CThostFtdcQryBrokerTradingParamsField pQryBrokerTradingParams, int nRequestID);
+		public delegate IntPtr DeleReqQryBrokerTradingAlgos(IntPtr api, ref CThostFtdcQryBrokerTradingAlgosField pQryBrokerTradingAlgos, int nRequestID);
+		public delegate IntPtr DeleReqQueryCFMMCTradingAccountToken(IntPtr api, ref CThostFtdcQueryCFMMCTradingAccountTokenField pQueryCFMMCTradingAccountToken, int nRequestID);
+		public delegate IntPtr DeleReqFromBankToFutureByFuture(IntPtr api, ref CThostFtdcReqTransferField pReqTransfer, int nRequestID);
+		public delegate IntPtr DeleReqFromFutureToBankByFuture(IntPtr api, ref CThostFtdcReqTransferField pReqTransfer, int nRequestID);
+		public delegate IntPtr DeleReqQueryBankAccountMoneyByFuture(IntPtr api, ref CThostFtdcReqQueryAccountField pReqQueryAccount, int nRequestID);
 
 		#endregion
 		#region REQ函数
@@ -155,17 +155,17 @@ namespace HaiFeng
 				UserID = UserID,
 				LoginMode = LoginMode,
 			};
-			return (loader.Invoke("RegisterFensUserInfo", typeof(DeleRegisterFensUserInfo)) as DeleRegisterFensUserInfo)(_api, struc);
+			return (loader.Invoke("RegisterFensUserInfo", typeof(DeleRegisterFensUserInfo)) as DeleRegisterFensUserInfo)(_api, ref struc);
 		}
 
 		public IntPtr SubscribePrivateTopic(THOST_TE_RESUME_TYPE nResumeType)
 		{
-			return (loader.Invoke("SubscribePrivateTopic", typeof(DeleSubscribePrivateTopic)) as DeleSubscribePrivateTopic)(_api, nResumeType);
+			return (loader.Invoke("SubscribePrivateTopic", typeof(DeleSubscribePrivateTopic)) as DeleSubscribePrivateTopic)(_api, ref nResumeType);
 		}
 
 		public IntPtr SubscribePublicTopic(THOST_TE_RESUME_TYPE nResumeType)
 		{
-			return (loader.Invoke("SubscribePublicTopic", typeof(DeleSubscribePublicTopic)) as DeleSubscribePublicTopic)(_api, nResumeType);
+			return (loader.Invoke("SubscribePublicTopic", typeof(DeleSubscribePublicTopic)) as DeleSubscribePublicTopic)(_api, ref nResumeType);
 		}
 
 		public IntPtr ReqAuthenticate(string BrokerID = "", string UserID = "", string UserProductInfo = "", string AuthCode = "")
@@ -177,7 +177,7 @@ namespace HaiFeng
 				UserProductInfo = UserProductInfo,
 				AuthCode = AuthCode,
 			};
-			return (loader.Invoke("ReqAuthenticate", typeof(DeleReqAuthenticate)) as DeleReqAuthenticate)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqAuthenticate", typeof(DeleReqAuthenticate)) as DeleReqAuthenticate)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqUserLogin(string TradingDay = "", string BrokerID = "", string UserID = "", string Password = "", string UserProductInfo = "", string InterfaceProductInfo = "", string ProtocolInfo = "", string MacAddress = "", string OneTimePassword = "", string ClientIPAddress = "", string LoginRemark = "")
@@ -196,7 +196,7 @@ namespace HaiFeng
 				ClientIPAddress = ClientIPAddress,
 				LoginRemark = LoginRemark,
 			};
-			return (loader.Invoke("ReqUserLogin", typeof(DeleReqUserLogin)) as DeleReqUserLogin)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqUserLogin", typeof(DeleReqUserLogin)) as DeleReqUserLogin)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqUserLogout(string BrokerID = "", string UserID = "")
@@ -206,7 +206,7 @@ namespace HaiFeng
 				BrokerID = BrokerID,
 				UserID = UserID,
 			};
-			return (loader.Invoke("ReqUserLogout", typeof(DeleReqUserLogout)) as DeleReqUserLogout)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqUserLogout", typeof(DeleReqUserLogout)) as DeleReqUserLogout)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqUserPasswordUpdate(string BrokerID = "", string UserID = "", string OldPassword = "", string NewPassword = "")
@@ -218,7 +218,7 @@ namespace HaiFeng
 				OldPassword = OldPassword,
 				NewPassword = NewPassword,
 			};
-			return (loader.Invoke("ReqUserPasswordUpdate", typeof(DeleReqUserPasswordUpdate)) as DeleReqUserPasswordUpdate)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqUserPasswordUpdate", typeof(DeleReqUserPasswordUpdate)) as DeleReqUserPasswordUpdate)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqTradingAccountPasswordUpdate(string BrokerID = "", string AccountID = "", string OldPassword = "", string NewPassword = "", string CurrencyID = "")
@@ -231,7 +231,7 @@ namespace HaiFeng
 				NewPassword = NewPassword,
 				CurrencyID = CurrencyID,
 			};
-			return (loader.Invoke("ReqTradingAccountPasswordUpdate", typeof(DeleReqTradingAccountPasswordUpdate)) as DeleReqTradingAccountPasswordUpdate)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqTradingAccountPasswordUpdate", typeof(DeleReqTradingAccountPasswordUpdate)) as DeleReqTradingAccountPasswordUpdate)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqUserLogin2(string TradingDay = "", string BrokerID = "", string UserID = "", string Password = "", string UserProductInfo = "", string InterfaceProductInfo = "", string ProtocolInfo = "", string MacAddress = "", string OneTimePassword = "", string ClientIPAddress = "", string LoginRemark = "")
@@ -250,7 +250,7 @@ namespace HaiFeng
 				ClientIPAddress = ClientIPAddress,
 				LoginRemark = LoginRemark,
 			};
-			return (loader.Invoke("ReqUserLogin2", typeof(DeleReqUserLogin2)) as DeleReqUserLogin2)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqUserLogin2", typeof(DeleReqUserLogin2)) as DeleReqUserLogin2)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqUserPasswordUpdate2(string BrokerID = "", string UserID = "", string OldPassword = "", string NewPassword = "")
@@ -262,7 +262,7 @@ namespace HaiFeng
 				OldPassword = OldPassword,
 				NewPassword = NewPassword,
 			};
-			return (loader.Invoke("ReqUserPasswordUpdate2", typeof(DeleReqUserPasswordUpdate2)) as DeleReqUserPasswordUpdate2)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqUserPasswordUpdate2", typeof(DeleReqUserPasswordUpdate2)) as DeleReqUserPasswordUpdate2)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqOrderInsert(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string OrderRef = "", string UserID = "", TThostFtdcOrderPriceTypeType OrderPriceType = TThostFtdcOrderPriceTypeType.THOST_FTDC_OPT_AnyPrice, TThostFtdcDirectionType Direction = TThostFtdcDirectionType.THOST_FTDC_D_Buy, string CombOffsetFlag = "", string CombHedgeFlag = "", double LimitPrice = 0, int VolumeTotalOriginal = 0, TThostFtdcTimeConditionType TimeCondition = TThostFtdcTimeConditionType.THOST_FTDC_TC_IOC, string GTDDate = "", TThostFtdcVolumeConditionType VolumeCondition = TThostFtdcVolumeConditionType.THOST_FTDC_VC_AV, int MinVolume = 0, TThostFtdcContingentConditionType ContingentCondition = TThostFtdcContingentConditionType.THOST_FTDC_CC_Immediately, double StopPrice = 0, TThostFtdcForceCloseReasonType ForceCloseReason = TThostFtdcForceCloseReasonType.THOST_FTDC_FCC_NotForceClose, int IsAutoSuspend = 0, string BusinessUnit = "", int RequestID = 0, int UserForceClose = 0, int IsSwapOrder = 0, string ExchangeID = "", string InvestUnitID = "", string AccountID = "", string CurrencyID = "", string ClientID = "", string IPAddress = "", string MacAddress = "")
@@ -300,7 +300,7 @@ namespace HaiFeng
 				IPAddress = IPAddress,
 				MacAddress = MacAddress,
 			};
-			return (loader.Invoke("ReqOrderInsert", typeof(DeleReqOrderInsert)) as DeleReqOrderInsert)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqOrderInsert", typeof(DeleReqOrderInsert)) as DeleReqOrderInsert)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqParkedOrderInsert(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string OrderRef = "", string UserID = "", TThostFtdcOrderPriceTypeType OrderPriceType = TThostFtdcOrderPriceTypeType.THOST_FTDC_OPT_AnyPrice, TThostFtdcDirectionType Direction = TThostFtdcDirectionType.THOST_FTDC_D_Buy, string CombOffsetFlag = "", string CombHedgeFlag = "", double LimitPrice = 0, int VolumeTotalOriginal = 0, TThostFtdcTimeConditionType TimeCondition = TThostFtdcTimeConditionType.THOST_FTDC_TC_IOC, string GTDDate = "", TThostFtdcVolumeConditionType VolumeCondition = TThostFtdcVolumeConditionType.THOST_FTDC_VC_AV, int MinVolume = 0, TThostFtdcContingentConditionType ContingentCondition = TThostFtdcContingentConditionType.THOST_FTDC_CC_Immediately, double StopPrice = 0, TThostFtdcForceCloseReasonType ForceCloseReason = TThostFtdcForceCloseReasonType.THOST_FTDC_FCC_NotForceClose, int IsAutoSuspend = 0, string BusinessUnit = "", int RequestID = 0, int UserForceClose = 0, string ExchangeID = "", string ParkedOrderID = "", TThostFtdcUserTypeType UserType = TThostFtdcUserTypeType.THOST_FTDC_UT_Investor, TThostFtdcParkedOrderStatusType Status = TThostFtdcParkedOrderStatusType.THOST_FTDC_PAOS_NotSend, int ErrorID = 0, string ErrorMsg = "", int IsSwapOrder = 0, string AccountID = "", string CurrencyID = "", string ClientID = "", string InvestUnitID = "", string IPAddress = "", string MacAddress = "")
@@ -343,7 +343,7 @@ namespace HaiFeng
 				IPAddress = IPAddress,
 				MacAddress = MacAddress,
 			};
-			return (loader.Invoke("ReqParkedOrderInsert", typeof(DeleReqParkedOrderInsert)) as DeleReqParkedOrderInsert)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqParkedOrderInsert", typeof(DeleReqParkedOrderInsert)) as DeleReqParkedOrderInsert)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqParkedOrderAction(string BrokerID = "", string InvestorID = "", int OrderActionRef = 0, string OrderRef = "", int RequestID = 0, int FrontID = 0, int SessionID = 0, string ExchangeID = "", string OrderSysID = "", TThostFtdcActionFlagType ActionFlag = TThostFtdcActionFlagType.THOST_FTDC_AF_Delete, double LimitPrice = 0, int VolumeChange = 0, string UserID = "", string InstrumentID = "", string ParkedOrderActionID = "", TThostFtdcUserTypeType UserType = TThostFtdcUserTypeType.THOST_FTDC_UT_Investor, TThostFtdcParkedOrderStatusType Status = TThostFtdcParkedOrderStatusType.THOST_FTDC_PAOS_NotSend, int ErrorID = 0, string ErrorMsg = "", string InvestUnitID = "", string IPAddress = "", string MacAddress = "")
@@ -373,7 +373,7 @@ namespace HaiFeng
 				IPAddress = IPAddress,
 				MacAddress = MacAddress,
 			};
-			return (loader.Invoke("ReqParkedOrderAction", typeof(DeleReqParkedOrderAction)) as DeleReqParkedOrderAction)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqParkedOrderAction", typeof(DeleReqParkedOrderAction)) as DeleReqParkedOrderAction)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqOrderAction(string BrokerID = "", string InvestorID = "", int OrderActionRef = 0, string OrderRef = "", int RequestID = 0, int FrontID = 0, int SessionID = 0, string ExchangeID = "", string OrderSysID = "", TThostFtdcActionFlagType ActionFlag = TThostFtdcActionFlagType.THOST_FTDC_AF_Delete, double LimitPrice = 0, int VolumeChange = 0, string UserID = "", string InstrumentID = "", string InvestUnitID = "", string IPAddress = "", string MacAddress = "")
@@ -398,7 +398,7 @@ namespace HaiFeng
 				IPAddress = IPAddress,
 				MacAddress = MacAddress,
 			};
-			return (loader.Invoke("ReqOrderAction", typeof(DeleReqOrderAction)) as DeleReqOrderAction)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqOrderAction", typeof(DeleReqOrderAction)) as DeleReqOrderAction)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQueryMaxOrderVolume(string BrokerID = "", string InvestorID = "", string InstrumentID = "", TThostFtdcDirectionType Direction = TThostFtdcDirectionType.THOST_FTDC_D_Buy, TThostFtdcOffsetFlagType OffsetFlag = TThostFtdcOffsetFlagType.THOST_FTDC_OF_Open, TThostFtdcHedgeFlagType HedgeFlag = TThostFtdcHedgeFlagType.THOST_FTDC_HF_Speculation, int MaxVolume = 0, string ExchangeID = "", string InvestUnitID = "")
@@ -415,7 +415,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQueryMaxOrderVolume", typeof(DeleReqQueryMaxOrderVolume)) as DeleReqQueryMaxOrderVolume)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQueryMaxOrderVolume", typeof(DeleReqQueryMaxOrderVolume)) as DeleReqQueryMaxOrderVolume)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqSettlementInfoConfirm(string BrokerID = "", string InvestorID = "", string ConfirmDate = "", string ConfirmTime = "", int SettlementID = 0, string AccountID = "", string CurrencyID = "")
@@ -430,7 +430,7 @@ namespace HaiFeng
 				AccountID = AccountID,
 				CurrencyID = CurrencyID,
 			};
-			return (loader.Invoke("ReqSettlementInfoConfirm", typeof(DeleReqSettlementInfoConfirm)) as DeleReqSettlementInfoConfirm)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqSettlementInfoConfirm", typeof(DeleReqSettlementInfoConfirm)) as DeleReqSettlementInfoConfirm)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqRemoveParkedOrder(string BrokerID = "", string InvestorID = "", string ParkedOrderID = "", string InvestUnitID = "")
@@ -442,7 +442,7 @@ namespace HaiFeng
 				ParkedOrderID = ParkedOrderID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqRemoveParkedOrder", typeof(DeleReqRemoveParkedOrder)) as DeleReqRemoveParkedOrder)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqRemoveParkedOrder", typeof(DeleReqRemoveParkedOrder)) as DeleReqRemoveParkedOrder)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqRemoveParkedOrderAction(string BrokerID = "", string InvestorID = "", string ParkedOrderActionID = "", string InvestUnitID = "")
@@ -454,7 +454,7 @@ namespace HaiFeng
 				ParkedOrderActionID = ParkedOrderActionID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqRemoveParkedOrderAction", typeof(DeleReqRemoveParkedOrderAction)) as DeleReqRemoveParkedOrderAction)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqRemoveParkedOrderAction", typeof(DeleReqRemoveParkedOrderAction)) as DeleReqRemoveParkedOrderAction)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqExecOrderInsert(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExecOrderRef = "", string UserID = "", int Volume = 0, int RequestID = 0, string BusinessUnit = "", TThostFtdcOffsetFlagType OffsetFlag = TThostFtdcOffsetFlagType.THOST_FTDC_OF_Open, TThostFtdcHedgeFlagType HedgeFlag = TThostFtdcHedgeFlagType.THOST_FTDC_HF_Speculation, TThostFtdcActionTypeType ActionType = TThostFtdcActionTypeType.THOST_FTDC_ACTP_Exec, TThostFtdcPosiDirectionType PosiDirection = TThostFtdcPosiDirectionType.THOST_FTDC_PD_Net, TThostFtdcExecOrderPositionFlagType ReservePositionFlag = TThostFtdcExecOrderPositionFlagType.THOST_FTDC_EOPF_Reserve, TThostFtdcExecOrderCloseFlagType CloseFlag = TThostFtdcExecOrderCloseFlagType.THOST_FTDC_EOCF_AutoClose, string ExchangeID = "", string InvestUnitID = "", string AccountID = "", string CurrencyID = "", string ClientID = "", string IPAddress = "", string MacAddress = "")
@@ -483,7 +483,7 @@ namespace HaiFeng
 				IPAddress = IPAddress,
 				MacAddress = MacAddress,
 			};
-			return (loader.Invoke("ReqExecOrderInsert", typeof(DeleReqExecOrderInsert)) as DeleReqExecOrderInsert)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqExecOrderInsert", typeof(DeleReqExecOrderInsert)) as DeleReqExecOrderInsert)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqExecOrderAction(string BrokerID = "", string InvestorID = "", int ExecOrderActionRef = 0, string ExecOrderRef = "", int RequestID = 0, int FrontID = 0, int SessionID = 0, string ExchangeID = "", string ExecOrderSysID = "", TThostFtdcActionFlagType ActionFlag = TThostFtdcActionFlagType.THOST_FTDC_AF_Delete, string UserID = "", string InstrumentID = "", string InvestUnitID = "", string IPAddress = "", string MacAddress = "")
@@ -506,7 +506,7 @@ namespace HaiFeng
 				IPAddress = IPAddress,
 				MacAddress = MacAddress,
 			};
-			return (loader.Invoke("ReqExecOrderAction", typeof(DeleReqExecOrderAction)) as DeleReqExecOrderAction)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqExecOrderAction", typeof(DeleReqExecOrderAction)) as DeleReqExecOrderAction)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqForQuoteInsert(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ForQuoteRef = "", string UserID = "", string ExchangeID = "", string InvestUnitID = "", string IPAddress = "", string MacAddress = "")
@@ -523,7 +523,7 @@ namespace HaiFeng
 				IPAddress = IPAddress,
 				MacAddress = MacAddress,
 			};
-			return (loader.Invoke("ReqForQuoteInsert", typeof(DeleReqForQuoteInsert)) as DeleReqForQuoteInsert)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqForQuoteInsert", typeof(DeleReqForQuoteInsert)) as DeleReqForQuoteInsert)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQuoteInsert(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string QuoteRef = "", string UserID = "", double AskPrice = 0, double BidPrice = 0, int AskVolume = 0, int BidVolume = 0, int RequestID = 0, string BusinessUnit = "", TThostFtdcOffsetFlagType AskOffsetFlag = TThostFtdcOffsetFlagType.THOST_FTDC_OF_Open, TThostFtdcOffsetFlagType BidOffsetFlag = TThostFtdcOffsetFlagType.THOST_FTDC_OF_Open, TThostFtdcHedgeFlagType AskHedgeFlag = TThostFtdcHedgeFlagType.THOST_FTDC_HF_Speculation, TThostFtdcHedgeFlagType BidHedgeFlag = TThostFtdcHedgeFlagType.THOST_FTDC_HF_Speculation, string AskOrderRef = "", string BidOrderRef = "", string ForQuoteSysID = "", string ExchangeID = "", string InvestUnitID = "", string ClientID = "", string IPAddress = "", string MacAddress = "")
@@ -554,7 +554,7 @@ namespace HaiFeng
 				IPAddress = IPAddress,
 				MacAddress = MacAddress,
 			};
-			return (loader.Invoke("ReqQuoteInsert", typeof(DeleReqQuoteInsert)) as DeleReqQuoteInsert)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQuoteInsert", typeof(DeleReqQuoteInsert)) as DeleReqQuoteInsert)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQuoteAction(string BrokerID = "", string InvestorID = "", int QuoteActionRef = 0, string QuoteRef = "", int RequestID = 0, int FrontID = 0, int SessionID = 0, string ExchangeID = "", string QuoteSysID = "", TThostFtdcActionFlagType ActionFlag = TThostFtdcActionFlagType.THOST_FTDC_AF_Delete, string UserID = "", string InstrumentID = "", string InvestUnitID = "", string ClientID = "", string IPAddress = "", string MacAddress = "")
@@ -578,7 +578,7 @@ namespace HaiFeng
 				IPAddress = IPAddress,
 				MacAddress = MacAddress,
 			};
-			return (loader.Invoke("ReqQuoteAction", typeof(DeleReqQuoteAction)) as DeleReqQuoteAction)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQuoteAction", typeof(DeleReqQuoteAction)) as DeleReqQuoteAction)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqBatchOrderAction(string BrokerID = "", string InvestorID = "", int OrderActionRef = 0, int RequestID = 0, int FrontID = 0, int SessionID = 0, string ExchangeID = "", string UserID = "", string InvestUnitID = "", string IPAddress = "", string MacAddress = "")
@@ -597,7 +597,7 @@ namespace HaiFeng
 				IPAddress = IPAddress,
 				MacAddress = MacAddress,
 			};
-			return (loader.Invoke("ReqBatchOrderAction", typeof(DeleReqBatchOrderAction)) as DeleReqBatchOrderAction)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqBatchOrderAction", typeof(DeleReqBatchOrderAction)) as DeleReqBatchOrderAction)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqOptionSelfCloseInsert(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string OptionSelfCloseRef = "", string UserID = "", int Volume = 0, int RequestID = 0, string BusinessUnit = "", TThostFtdcHedgeFlagType HedgeFlag = TThostFtdcHedgeFlagType.THOST_FTDC_HF_Speculation, TThostFtdcOptSelfCloseFlagType OptSelfCloseFlag = TThostFtdcOptSelfCloseFlagType.THOST_FTDC_OSCF_CloseSelfOptionPosition, string ExchangeID = "", string InvestUnitID = "", string AccountID = "", string CurrencyID = "", string ClientID = "", string IPAddress = "", string MacAddress = "")
@@ -622,7 +622,7 @@ namespace HaiFeng
 				IPAddress = IPAddress,
 				MacAddress = MacAddress,
 			};
-			return (loader.Invoke("ReqOptionSelfCloseInsert", typeof(DeleReqOptionSelfCloseInsert)) as DeleReqOptionSelfCloseInsert)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqOptionSelfCloseInsert", typeof(DeleReqOptionSelfCloseInsert)) as DeleReqOptionSelfCloseInsert)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqOptionSelfCloseAction(string BrokerID = "", string InvestorID = "", int OptionSelfCloseActionRef = 0, string OptionSelfCloseRef = "", int RequestID = 0, int FrontID = 0, int SessionID = 0, string ExchangeID = "", string OptionSelfCloseSysID = "", TThostFtdcActionFlagType ActionFlag = TThostFtdcActionFlagType.THOST_FTDC_AF_Delete, string UserID = "", string InstrumentID = "", string InvestUnitID = "", string IPAddress = "", string MacAddress = "")
@@ -645,7 +645,7 @@ namespace HaiFeng
 				IPAddress = IPAddress,
 				MacAddress = MacAddress,
 			};
-			return (loader.Invoke("ReqOptionSelfCloseAction", typeof(DeleReqOptionSelfCloseAction)) as DeleReqOptionSelfCloseAction)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqOptionSelfCloseAction", typeof(DeleReqOptionSelfCloseAction)) as DeleReqOptionSelfCloseAction)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqCombActionInsert(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string CombActionRef = "", string UserID = "", TThostFtdcDirectionType Direction = TThostFtdcDirectionType.THOST_FTDC_D_Buy, int Volume = 0, TThostFtdcCombDirectionType CombDirection = TThostFtdcCombDirectionType.THOST_FTDC_CMDR_Comb, TThostFtdcHedgeFlagType HedgeFlag = TThostFtdcHedgeFlagType.THOST_FTDC_HF_Speculation, string ExchangeID = "", string IPAddress = "", string MacAddress = "", string InvestUnitID = "")
@@ -666,7 +666,7 @@ namespace HaiFeng
 				MacAddress = MacAddress,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqCombActionInsert", typeof(DeleReqCombActionInsert)) as DeleReqCombActionInsert)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqCombActionInsert", typeof(DeleReqCombActionInsert)) as DeleReqCombActionInsert)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryOrder(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string OrderSysID = "", string InsertTimeStart = "", string InsertTimeEnd = "", string InvestUnitID = "")
@@ -682,7 +682,7 @@ namespace HaiFeng
 				InsertTimeEnd = InsertTimeEnd,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryOrder", typeof(DeleReqQryOrder)) as DeleReqQryOrder)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryOrder", typeof(DeleReqQryOrder)) as DeleReqQryOrder)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryTrade(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string TradeID = "", string TradeTimeStart = "", string TradeTimeEnd = "", string InvestUnitID = "")
@@ -698,7 +698,7 @@ namespace HaiFeng
 				TradeTimeEnd = TradeTimeEnd,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryTrade", typeof(DeleReqQryTrade)) as DeleReqQryTrade)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryTrade", typeof(DeleReqQryTrade)) as DeleReqQryTrade)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryInvestorPosition(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string InvestUnitID = "")
@@ -711,7 +711,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryInvestorPosition", typeof(DeleReqQryInvestorPosition)) as DeleReqQryInvestorPosition)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryInvestorPosition", typeof(DeleReqQryInvestorPosition)) as DeleReqQryInvestorPosition)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryTradingAccount(string BrokerID = "", string InvestorID = "", string CurrencyID = "", TThostFtdcBizTypeType BizType = TThostFtdcBizTypeType.THOST_FTDC_BZTP_Future, string AccountID = "")
@@ -724,7 +724,7 @@ namespace HaiFeng
 				BizType = BizType,
 				AccountID = AccountID,
 			};
-			return (loader.Invoke("ReqQryTradingAccount", typeof(DeleReqQryTradingAccount)) as DeleReqQryTradingAccount)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryTradingAccount", typeof(DeleReqQryTradingAccount)) as DeleReqQryTradingAccount)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryInvestor(string BrokerID = "", string InvestorID = "")
@@ -734,7 +734,7 @@ namespace HaiFeng
 				BrokerID = BrokerID,
 				InvestorID = InvestorID,
 			};
-			return (loader.Invoke("ReqQryInvestor", typeof(DeleReqQryInvestor)) as DeleReqQryInvestor)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryInvestor", typeof(DeleReqQryInvestor)) as DeleReqQryInvestor)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryTradingCode(string BrokerID = "", string InvestorID = "", string ExchangeID = "", string ClientID = "", TThostFtdcClientIDTypeType ClientIDType = TThostFtdcClientIDTypeType.THOST_FTDC_CIDT_Speculation, string InvestUnitID = "")
@@ -748,7 +748,7 @@ namespace HaiFeng
 				ClientIDType = ClientIDType,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryTradingCode", typeof(DeleReqQryTradingCode)) as DeleReqQryTradingCode)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryTradingCode", typeof(DeleReqQryTradingCode)) as DeleReqQryTradingCode)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryInstrumentMarginRate(string BrokerID = "", string InvestorID = "", string InstrumentID = "", TThostFtdcHedgeFlagType HedgeFlag = TThostFtdcHedgeFlagType.THOST_FTDC_HF_Speculation, string ExchangeID = "", string InvestUnitID = "")
@@ -762,7 +762,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryInstrumentMarginRate", typeof(DeleReqQryInstrumentMarginRate)) as DeleReqQryInstrumentMarginRate)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryInstrumentMarginRate", typeof(DeleReqQryInstrumentMarginRate)) as DeleReqQryInstrumentMarginRate)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryInstrumentCommissionRate(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string InvestUnitID = "")
@@ -775,7 +775,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryInstrumentCommissionRate", typeof(DeleReqQryInstrumentCommissionRate)) as DeleReqQryInstrumentCommissionRate)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryInstrumentCommissionRate", typeof(DeleReqQryInstrumentCommissionRate)) as DeleReqQryInstrumentCommissionRate)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryExchange(string ExchangeID = "")
@@ -784,7 +784,7 @@ namespace HaiFeng
 			{
 				ExchangeID = ExchangeID,
 			};
-			return (loader.Invoke("ReqQryExchange", typeof(DeleReqQryExchange)) as DeleReqQryExchange)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryExchange", typeof(DeleReqQryExchange)) as DeleReqQryExchange)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryProduct(string ProductID = "", TThostFtdcProductClassType ProductClass = TThostFtdcProductClassType.THOST_FTDC_PC_Futures, string ExchangeID = "")
@@ -795,7 +795,7 @@ namespace HaiFeng
 				ProductClass = ProductClass,
 				ExchangeID = ExchangeID,
 			};
-			return (loader.Invoke("ReqQryProduct", typeof(DeleReqQryProduct)) as DeleReqQryProduct)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryProduct", typeof(DeleReqQryProduct)) as DeleReqQryProduct)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryInstrument(string InstrumentID = "", string ExchangeID = "", string ExchangeInstID = "", string ProductID = "")
@@ -807,7 +807,7 @@ namespace HaiFeng
 				ExchangeInstID = ExchangeInstID,
 				ProductID = ProductID,
 			};
-			return (loader.Invoke("ReqQryInstrument", typeof(DeleReqQryInstrument)) as DeleReqQryInstrument)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryInstrument", typeof(DeleReqQryInstrument)) as DeleReqQryInstrument)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryDepthMarketData(string InstrumentID = "", string ExchangeID = "")
@@ -817,7 +817,7 @@ namespace HaiFeng
 				InstrumentID = InstrumentID,
 				ExchangeID = ExchangeID,
 			};
-			return (loader.Invoke("ReqQryDepthMarketData", typeof(DeleReqQryDepthMarketData)) as DeleReqQryDepthMarketData)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryDepthMarketData", typeof(DeleReqQryDepthMarketData)) as DeleReqQryDepthMarketData)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQrySettlementInfo(string BrokerID = "", string InvestorID = "", string TradingDay = "", string AccountID = "", string CurrencyID = "")
@@ -830,7 +830,7 @@ namespace HaiFeng
 				AccountID = AccountID,
 				CurrencyID = CurrencyID,
 			};
-			return (loader.Invoke("ReqQrySettlementInfo", typeof(DeleReqQrySettlementInfo)) as DeleReqQrySettlementInfo)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQrySettlementInfo", typeof(DeleReqQrySettlementInfo)) as DeleReqQrySettlementInfo)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryTransferBank(string BankID = "", string BankBrchID = "")
@@ -840,7 +840,7 @@ namespace HaiFeng
 				BankID = BankID,
 				BankBrchID = BankBrchID,
 			};
-			return (loader.Invoke("ReqQryTransferBank", typeof(DeleReqQryTransferBank)) as DeleReqQryTransferBank)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryTransferBank", typeof(DeleReqQryTransferBank)) as DeleReqQryTransferBank)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryInvestorPositionDetail(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string InvestUnitID = "")
@@ -853,7 +853,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryInvestorPositionDetail", typeof(DeleReqQryInvestorPositionDetail)) as DeleReqQryInvestorPositionDetail)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryInvestorPositionDetail", typeof(DeleReqQryInvestorPositionDetail)) as DeleReqQryInvestorPositionDetail)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryNotice(string BrokerID = "")
@@ -862,7 +862,7 @@ namespace HaiFeng
 			{
 				BrokerID = BrokerID,
 			};
-			return (loader.Invoke("ReqQryNotice", typeof(DeleReqQryNotice)) as DeleReqQryNotice)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryNotice", typeof(DeleReqQryNotice)) as DeleReqQryNotice)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQrySettlementInfoConfirm(string BrokerID = "", string InvestorID = "", string AccountID = "", string CurrencyID = "")
@@ -874,7 +874,7 @@ namespace HaiFeng
 				AccountID = AccountID,
 				CurrencyID = CurrencyID,
 			};
-			return (loader.Invoke("ReqQrySettlementInfoConfirm", typeof(DeleReqQrySettlementInfoConfirm)) as DeleReqQrySettlementInfoConfirm)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQrySettlementInfoConfirm", typeof(DeleReqQrySettlementInfoConfirm)) as DeleReqQrySettlementInfoConfirm)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryInvestorPositionCombineDetail(string BrokerID = "", string InvestorID = "", string CombInstrumentID = "", string ExchangeID = "", string InvestUnitID = "")
@@ -887,7 +887,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryInvestorPositionCombineDetail", typeof(DeleReqQryInvestorPositionCombineDetail)) as DeleReqQryInvestorPositionCombineDetail)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryInvestorPositionCombineDetail", typeof(DeleReqQryInvestorPositionCombineDetail)) as DeleReqQryInvestorPositionCombineDetail)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryCFMMCTradingAccountKey(string BrokerID = "", string InvestorID = "")
@@ -897,7 +897,7 @@ namespace HaiFeng
 				BrokerID = BrokerID,
 				InvestorID = InvestorID,
 			};
-			return (loader.Invoke("ReqQryCFMMCTradingAccountKey", typeof(DeleReqQryCFMMCTradingAccountKey)) as DeleReqQryCFMMCTradingAccountKey)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryCFMMCTradingAccountKey", typeof(DeleReqQryCFMMCTradingAccountKey)) as DeleReqQryCFMMCTradingAccountKey)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryEWarrantOffset(string BrokerID = "", string InvestorID = "", string ExchangeID = "", string InstrumentID = "", string InvestUnitID = "")
@@ -910,7 +910,7 @@ namespace HaiFeng
 				InstrumentID = InstrumentID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryEWarrantOffset", typeof(DeleReqQryEWarrantOffset)) as DeleReqQryEWarrantOffset)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryEWarrantOffset", typeof(DeleReqQryEWarrantOffset)) as DeleReqQryEWarrantOffset)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryInvestorProductGroupMargin(string BrokerID = "", string InvestorID = "", string ProductGroupID = "", TThostFtdcHedgeFlagType HedgeFlag = TThostFtdcHedgeFlagType.THOST_FTDC_HF_Speculation, string ExchangeID = "", string InvestUnitID = "")
@@ -924,7 +924,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryInvestorProductGroupMargin", typeof(DeleReqQryInvestorProductGroupMargin)) as DeleReqQryInvestorProductGroupMargin)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryInvestorProductGroupMargin", typeof(DeleReqQryInvestorProductGroupMargin)) as DeleReqQryInvestorProductGroupMargin)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryExchangeMarginRate(string BrokerID = "", string InstrumentID = "", TThostFtdcHedgeFlagType HedgeFlag = TThostFtdcHedgeFlagType.THOST_FTDC_HF_Speculation, string ExchangeID = "")
@@ -936,7 +936,7 @@ namespace HaiFeng
 				HedgeFlag = HedgeFlag,
 				ExchangeID = ExchangeID,
 			};
-			return (loader.Invoke("ReqQryExchangeMarginRate", typeof(DeleReqQryExchangeMarginRate)) as DeleReqQryExchangeMarginRate)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryExchangeMarginRate", typeof(DeleReqQryExchangeMarginRate)) as DeleReqQryExchangeMarginRate)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryExchangeMarginRateAdjust(string BrokerID = "", string InstrumentID = "", TThostFtdcHedgeFlagType HedgeFlag = TThostFtdcHedgeFlagType.THOST_FTDC_HF_Speculation)
@@ -947,7 +947,7 @@ namespace HaiFeng
 				InstrumentID = InstrumentID,
 				HedgeFlag = HedgeFlag,
 			};
-			return (loader.Invoke("ReqQryExchangeMarginRateAdjust", typeof(DeleReqQryExchangeMarginRateAdjust)) as DeleReqQryExchangeMarginRateAdjust)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryExchangeMarginRateAdjust", typeof(DeleReqQryExchangeMarginRateAdjust)) as DeleReqQryExchangeMarginRateAdjust)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryExchangeRate(string BrokerID = "", string FromCurrencyID = "", string ToCurrencyID = "")
@@ -958,7 +958,7 @@ namespace HaiFeng
 				FromCurrencyID = FromCurrencyID,
 				ToCurrencyID = ToCurrencyID,
 			};
-			return (loader.Invoke("ReqQryExchangeRate", typeof(DeleReqQryExchangeRate)) as DeleReqQryExchangeRate)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryExchangeRate", typeof(DeleReqQryExchangeRate)) as DeleReqQryExchangeRate)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQrySecAgentACIDMap(string BrokerID = "", string UserID = "", string AccountID = "", string CurrencyID = "")
@@ -970,7 +970,7 @@ namespace HaiFeng
 				AccountID = AccountID,
 				CurrencyID = CurrencyID,
 			};
-			return (loader.Invoke("ReqQrySecAgentACIDMap", typeof(DeleReqQrySecAgentACIDMap)) as DeleReqQrySecAgentACIDMap)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQrySecAgentACIDMap", typeof(DeleReqQrySecAgentACIDMap)) as DeleReqQrySecAgentACIDMap)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryProductExchRate(string ProductID = "", string ExchangeID = "")
@@ -980,7 +980,7 @@ namespace HaiFeng
 				ProductID = ProductID,
 				ExchangeID = ExchangeID,
 			};
-			return (loader.Invoke("ReqQryProductExchRate", typeof(DeleReqQryProductExchRate)) as DeleReqQryProductExchRate)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryProductExchRate", typeof(DeleReqQryProductExchRate)) as DeleReqQryProductExchRate)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryProductGroup(string ProductID = "", string ExchangeID = "")
@@ -990,7 +990,7 @@ namespace HaiFeng
 				ProductID = ProductID,
 				ExchangeID = ExchangeID,
 			};
-			return (loader.Invoke("ReqQryProductGroup", typeof(DeleReqQryProductGroup)) as DeleReqQryProductGroup)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryProductGroup", typeof(DeleReqQryProductGroup)) as DeleReqQryProductGroup)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryMMInstrumentCommissionRate(string BrokerID = "", string InvestorID = "", string InstrumentID = "")
@@ -1001,7 +1001,7 @@ namespace HaiFeng
 				InvestorID = InvestorID,
 				InstrumentID = InstrumentID,
 			};
-			return (loader.Invoke("ReqQryMMInstrumentCommissionRate", typeof(DeleReqQryMMInstrumentCommissionRate)) as DeleReqQryMMInstrumentCommissionRate)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryMMInstrumentCommissionRate", typeof(DeleReqQryMMInstrumentCommissionRate)) as DeleReqQryMMInstrumentCommissionRate)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryMMOptionInstrCommRate(string BrokerID = "", string InvestorID = "", string InstrumentID = "")
@@ -1012,7 +1012,7 @@ namespace HaiFeng
 				InvestorID = InvestorID,
 				InstrumentID = InstrumentID,
 			};
-			return (loader.Invoke("ReqQryMMOptionInstrCommRate", typeof(DeleReqQryMMOptionInstrCommRate)) as DeleReqQryMMOptionInstrCommRate)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryMMOptionInstrCommRate", typeof(DeleReqQryMMOptionInstrCommRate)) as DeleReqQryMMOptionInstrCommRate)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryInstrumentOrderCommRate(string BrokerID = "", string InvestorID = "", string InstrumentID = "")
@@ -1023,7 +1023,7 @@ namespace HaiFeng
 				InvestorID = InvestorID,
 				InstrumentID = InstrumentID,
 			};
-			return (loader.Invoke("ReqQryInstrumentOrderCommRate", typeof(DeleReqQryInstrumentOrderCommRate)) as DeleReqQryInstrumentOrderCommRate)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryInstrumentOrderCommRate", typeof(DeleReqQryInstrumentOrderCommRate)) as DeleReqQryInstrumentOrderCommRate)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQrySecAgentTradingAccount(string BrokerID = "", string InvestorID = "", string CurrencyID = "", TThostFtdcBizTypeType BizType = TThostFtdcBizTypeType.THOST_FTDC_BZTP_Future, string AccountID = "")
@@ -1036,7 +1036,7 @@ namespace HaiFeng
 				BizType = BizType,
 				AccountID = AccountID,
 			};
-			return (loader.Invoke("ReqQrySecAgentTradingAccount", typeof(DeleReqQrySecAgentTradingAccount)) as DeleReqQrySecAgentTradingAccount)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQrySecAgentTradingAccount", typeof(DeleReqQrySecAgentTradingAccount)) as DeleReqQrySecAgentTradingAccount)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQrySecAgentCheckMode(string BrokerID = "", string InvestorID = "")
@@ -1046,7 +1046,7 @@ namespace HaiFeng
 				BrokerID = BrokerID,
 				InvestorID = InvestorID,
 			};
-			return (loader.Invoke("ReqQrySecAgentCheckMode", typeof(DeleReqQrySecAgentCheckMode)) as DeleReqQrySecAgentCheckMode)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQrySecAgentCheckMode", typeof(DeleReqQrySecAgentCheckMode)) as DeleReqQrySecAgentCheckMode)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryOptionInstrTradeCost(string BrokerID = "", string InvestorID = "", string InstrumentID = "", TThostFtdcHedgeFlagType HedgeFlag = TThostFtdcHedgeFlagType.THOST_FTDC_HF_Speculation, double InputPrice = 0, double UnderlyingPrice = 0, string ExchangeID = "", string InvestUnitID = "")
@@ -1062,7 +1062,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryOptionInstrTradeCost", typeof(DeleReqQryOptionInstrTradeCost)) as DeleReqQryOptionInstrTradeCost)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryOptionInstrTradeCost", typeof(DeleReqQryOptionInstrTradeCost)) as DeleReqQryOptionInstrTradeCost)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryOptionInstrCommRate(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string InvestUnitID = "")
@@ -1075,7 +1075,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryOptionInstrCommRate", typeof(DeleReqQryOptionInstrCommRate)) as DeleReqQryOptionInstrCommRate)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryOptionInstrCommRate", typeof(DeleReqQryOptionInstrCommRate)) as DeleReqQryOptionInstrCommRate)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryExecOrder(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string ExecOrderSysID = "", string InsertTimeStart = "", string InsertTimeEnd = "")
@@ -1090,7 +1090,7 @@ namespace HaiFeng
 				InsertTimeStart = InsertTimeStart,
 				InsertTimeEnd = InsertTimeEnd,
 			};
-			return (loader.Invoke("ReqQryExecOrder", typeof(DeleReqQryExecOrder)) as DeleReqQryExecOrder)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryExecOrder", typeof(DeleReqQryExecOrder)) as DeleReqQryExecOrder)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryForQuote(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string InsertTimeStart = "", string InsertTimeEnd = "", string InvestUnitID = "")
@@ -1105,7 +1105,7 @@ namespace HaiFeng
 				InsertTimeEnd = InsertTimeEnd,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryForQuote", typeof(DeleReqQryForQuote)) as DeleReqQryForQuote)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryForQuote", typeof(DeleReqQryForQuote)) as DeleReqQryForQuote)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryQuote(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string QuoteSysID = "", string InsertTimeStart = "", string InsertTimeEnd = "", string InvestUnitID = "")
@@ -1121,7 +1121,7 @@ namespace HaiFeng
 				InsertTimeEnd = InsertTimeEnd,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryQuote", typeof(DeleReqQryQuote)) as DeleReqQryQuote)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryQuote", typeof(DeleReqQryQuote)) as DeleReqQryQuote)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryOptionSelfClose(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string OptionSelfCloseSysID = "", string InsertTimeStart = "", string InsertTimeEnd = "")
@@ -1136,7 +1136,7 @@ namespace HaiFeng
 				InsertTimeStart = InsertTimeStart,
 				InsertTimeEnd = InsertTimeEnd,
 			};
-			return (loader.Invoke("ReqQryOptionSelfClose", typeof(DeleReqQryOptionSelfClose)) as DeleReqQryOptionSelfClose)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryOptionSelfClose", typeof(DeleReqQryOptionSelfClose)) as DeleReqQryOptionSelfClose)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryInvestUnit(string BrokerID = "", string InvestorID = "", string InvestUnitID = "")
@@ -1147,7 +1147,7 @@ namespace HaiFeng
 				InvestorID = InvestorID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryInvestUnit", typeof(DeleReqQryInvestUnit)) as DeleReqQryInvestUnit)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryInvestUnit", typeof(DeleReqQryInvestUnit)) as DeleReqQryInvestUnit)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryCombInstrumentGuard(string BrokerID = "", string InstrumentID = "", string ExchangeID = "")
@@ -1158,7 +1158,7 @@ namespace HaiFeng
 				InstrumentID = InstrumentID,
 				ExchangeID = ExchangeID,
 			};
-			return (loader.Invoke("ReqQryCombInstrumentGuard", typeof(DeleReqQryCombInstrumentGuard)) as DeleReqQryCombInstrumentGuard)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryCombInstrumentGuard", typeof(DeleReqQryCombInstrumentGuard)) as DeleReqQryCombInstrumentGuard)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryCombAction(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string InvestUnitID = "")
@@ -1171,7 +1171,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryCombAction", typeof(DeleReqQryCombAction)) as DeleReqQryCombAction)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryCombAction", typeof(DeleReqQryCombAction)) as DeleReqQryCombAction)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryTransferSerial(string BrokerID = "", string AccountID = "", string BankID = "", string CurrencyID = "")
@@ -1183,7 +1183,7 @@ namespace HaiFeng
 				BankID = BankID,
 				CurrencyID = CurrencyID,
 			};
-			return (loader.Invoke("ReqQryTransferSerial", typeof(DeleReqQryTransferSerial)) as DeleReqQryTransferSerial)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryTransferSerial", typeof(DeleReqQryTransferSerial)) as DeleReqQryTransferSerial)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryAccountregister(string BrokerID = "", string AccountID = "", string BankID = "", string BankBranchID = "", string CurrencyID = "")
@@ -1196,7 +1196,7 @@ namespace HaiFeng
 				BankBranchID = BankBranchID,
 				CurrencyID = CurrencyID,
 			};
-			return (loader.Invoke("ReqQryAccountregister", typeof(DeleReqQryAccountregister)) as DeleReqQryAccountregister)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryAccountregister", typeof(DeleReqQryAccountregister)) as DeleReqQryAccountregister)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryContractBank(string BrokerID = "", string BankID = "", string BankBrchID = "")
@@ -1207,7 +1207,7 @@ namespace HaiFeng
 				BankID = BankID,
 				BankBrchID = BankBrchID,
 			};
-			return (loader.Invoke("ReqQryContractBank", typeof(DeleReqQryContractBank)) as DeleReqQryContractBank)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryContractBank", typeof(DeleReqQryContractBank)) as DeleReqQryContractBank)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryParkedOrder(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string InvestUnitID = "")
@@ -1220,7 +1220,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryParkedOrder", typeof(DeleReqQryParkedOrder)) as DeleReqQryParkedOrder)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryParkedOrder", typeof(DeleReqQryParkedOrder)) as DeleReqQryParkedOrder)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryParkedOrderAction(string BrokerID = "", string InvestorID = "", string InstrumentID = "", string ExchangeID = "", string InvestUnitID = "")
@@ -1233,7 +1233,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryParkedOrderAction", typeof(DeleReqQryParkedOrderAction)) as DeleReqQryParkedOrderAction)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryParkedOrderAction", typeof(DeleReqQryParkedOrderAction)) as DeleReqQryParkedOrderAction)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryTradingNotice(string BrokerID = "", string InvestorID = "", string InvestUnitID = "")
@@ -1244,7 +1244,7 @@ namespace HaiFeng
 				InvestorID = InvestorID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQryTradingNotice", typeof(DeleReqQryTradingNotice)) as DeleReqQryTradingNotice)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryTradingNotice", typeof(DeleReqQryTradingNotice)) as DeleReqQryTradingNotice)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryBrokerTradingParams(string BrokerID = "", string InvestorID = "", string CurrencyID = "", string AccountID = "")
@@ -1256,7 +1256,7 @@ namespace HaiFeng
 				CurrencyID = CurrencyID,
 				AccountID = AccountID,
 			};
-			return (loader.Invoke("ReqQryBrokerTradingParams", typeof(DeleReqQryBrokerTradingParams)) as DeleReqQryBrokerTradingParams)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryBrokerTradingParams", typeof(DeleReqQryBrokerTradingParams)) as DeleReqQryBrokerTradingParams)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQryBrokerTradingAlgos(string BrokerID = "", string ExchangeID = "", string InstrumentID = "")
@@ -1267,7 +1267,7 @@ namespace HaiFeng
 				ExchangeID = ExchangeID,
 				InstrumentID = InstrumentID,
 			};
-			return (loader.Invoke("ReqQryBrokerTradingAlgos", typeof(DeleReqQryBrokerTradingAlgos)) as DeleReqQryBrokerTradingAlgos)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQryBrokerTradingAlgos", typeof(DeleReqQryBrokerTradingAlgos)) as DeleReqQryBrokerTradingAlgos)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQueryCFMMCTradingAccountToken(string BrokerID = "", string InvestorID = "", string InvestUnitID = "")
@@ -1278,7 +1278,7 @@ namespace HaiFeng
 				InvestorID = InvestorID,
 				InvestUnitID = InvestUnitID,
 			};
-			return (loader.Invoke("ReqQueryCFMMCTradingAccountToken", typeof(DeleReqQueryCFMMCTradingAccountToken)) as DeleReqQueryCFMMCTradingAccountToken)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQueryCFMMCTradingAccountToken", typeof(DeleReqQueryCFMMCTradingAccountToken)) as DeleReqQueryCFMMCTradingAccountToken)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqFromBankToFutureByFuture(string TradeCode = "", string BankID = "", string BankBranchID = "", string BrokerID = "", string BrokerBranchID = "", string TradeDate = "", string TradeTime = "", string BankSerial = "", string TradingDay = "", int PlateSerial = 0, TThostFtdcLastFragmentType LastFragment = TThostFtdcLastFragmentType.THOST_FTDC_LF_Yes, int SessionID = 0, string CustomerName = "", TThostFtdcIdCardTypeType IdCardType = TThostFtdcIdCardTypeType.THOST_FTDC_ICT_EID, string IdentifiedCardNo = "", TThostFtdcCustTypeType CustType = TThostFtdcCustTypeType.THOST_FTDC_CUSTT_Person, string BankAccount = "", string BankPassWord = "", string AccountID = "", string Password = "", int InstallID = 0, int FutureSerial = 0, string UserID = "", TThostFtdcYesNoIndicatorType VerifyCertNoFlag = TThostFtdcYesNoIndicatorType.THOST_FTDC_YNI_Yes, string CurrencyID = "", double TradeAmount = 0, double FutureFetchAmount = 0, TThostFtdcFeePayFlagType FeePayFlag = TThostFtdcFeePayFlagType.THOST_FTDC_FPF_BEN, double CustFee = 0, double BrokerFee = 0, string Message = "", string Digest = "", TThostFtdcBankAccTypeType BankAccType = TThostFtdcBankAccTypeType.THOST_FTDC_BAT_BankBook, string DeviceID = "", TThostFtdcBankAccTypeType BankSecuAccType = TThostFtdcBankAccTypeType.THOST_FTDC_BAT_BankBook, string BrokerIDByBank = "", string BankSecuAcc = "", TThostFtdcPwdFlagType BankPwdFlag = TThostFtdcPwdFlagType.THOST_FTDC_BPWDF_NoCheck, TThostFtdcPwdFlagType SecuPwdFlag = TThostFtdcPwdFlagType.THOST_FTDC_BPWDF_NoCheck, string OperNo = "", int RequestID = 0, int TID = 0, TThostFtdcTransferStatusType TransferStatus = TThostFtdcTransferStatusType.THOST_FTDC_TRFS_Normal, string LongCustomerName = "")
@@ -1330,7 +1330,7 @@ namespace HaiFeng
 				TransferStatus = TransferStatus,
 				LongCustomerName = LongCustomerName,
 			};
-			return (loader.Invoke("ReqFromBankToFutureByFuture", typeof(DeleReqFromBankToFutureByFuture)) as DeleReqFromBankToFutureByFuture)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqFromBankToFutureByFuture", typeof(DeleReqFromBankToFutureByFuture)) as DeleReqFromBankToFutureByFuture)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqFromFutureToBankByFuture(string TradeCode = "", string BankID = "", string BankBranchID = "", string BrokerID = "", string BrokerBranchID = "", string TradeDate = "", string TradeTime = "", string BankSerial = "", string TradingDay = "", int PlateSerial = 0, TThostFtdcLastFragmentType LastFragment = TThostFtdcLastFragmentType.THOST_FTDC_LF_Yes, int SessionID = 0, string CustomerName = "", TThostFtdcIdCardTypeType IdCardType = TThostFtdcIdCardTypeType.THOST_FTDC_ICT_EID, string IdentifiedCardNo = "", TThostFtdcCustTypeType CustType = TThostFtdcCustTypeType.THOST_FTDC_CUSTT_Person, string BankAccount = "", string BankPassWord = "", string AccountID = "", string Password = "", int InstallID = 0, int FutureSerial = 0, string UserID = "", TThostFtdcYesNoIndicatorType VerifyCertNoFlag = TThostFtdcYesNoIndicatorType.THOST_FTDC_YNI_Yes, string CurrencyID = "", double TradeAmount = 0, double FutureFetchAmount = 0, TThostFtdcFeePayFlagType FeePayFlag = TThostFtdcFeePayFlagType.THOST_FTDC_FPF_BEN, double CustFee = 0, double BrokerFee = 0, string Message = "", string Digest = "", TThostFtdcBankAccTypeType BankAccType = TThostFtdcBankAccTypeType.THOST_FTDC_BAT_BankBook, string DeviceID = "", TThostFtdcBankAccTypeType BankSecuAccType = TThostFtdcBankAccTypeType.THOST_FTDC_BAT_BankBook, string BrokerIDByBank = "", string BankSecuAcc = "", TThostFtdcPwdFlagType BankPwdFlag = TThostFtdcPwdFlagType.THOST_FTDC_BPWDF_NoCheck, TThostFtdcPwdFlagType SecuPwdFlag = TThostFtdcPwdFlagType.THOST_FTDC_BPWDF_NoCheck, string OperNo = "", int RequestID = 0, int TID = 0, TThostFtdcTransferStatusType TransferStatus = TThostFtdcTransferStatusType.THOST_FTDC_TRFS_Normal, string LongCustomerName = "")
@@ -1382,7 +1382,7 @@ namespace HaiFeng
 				TransferStatus = TransferStatus,
 				LongCustomerName = LongCustomerName,
 			};
-			return (loader.Invoke("ReqFromFutureToBankByFuture", typeof(DeleReqFromFutureToBankByFuture)) as DeleReqFromFutureToBankByFuture)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqFromFutureToBankByFuture", typeof(DeleReqFromFutureToBankByFuture)) as DeleReqFromFutureToBankByFuture)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqQueryBankAccountMoneyByFuture(string TradeCode = "", string BankID = "", string BankBranchID = "", string BrokerID = "", string BrokerBranchID = "", string TradeDate = "", string TradeTime = "", string BankSerial = "", string TradingDay = "", int PlateSerial = 0, TThostFtdcLastFragmentType LastFragment = TThostFtdcLastFragmentType.THOST_FTDC_LF_Yes, int SessionID = 0, string CustomerName = "", TThostFtdcIdCardTypeType IdCardType = TThostFtdcIdCardTypeType.THOST_FTDC_ICT_EID, string IdentifiedCardNo = "", TThostFtdcCustTypeType CustType = TThostFtdcCustTypeType.THOST_FTDC_CUSTT_Person, string BankAccount = "", string BankPassWord = "", string AccountID = "", string Password = "", int FutureSerial = 0, int InstallID = 0, string UserID = "", TThostFtdcYesNoIndicatorType VerifyCertNoFlag = TThostFtdcYesNoIndicatorType.THOST_FTDC_YNI_Yes, string CurrencyID = "", string Digest = "", TThostFtdcBankAccTypeType BankAccType = TThostFtdcBankAccTypeType.THOST_FTDC_BAT_BankBook, string DeviceID = "", TThostFtdcBankAccTypeType BankSecuAccType = TThostFtdcBankAccTypeType.THOST_FTDC_BAT_BankBook, string BrokerIDByBank = "", string BankSecuAcc = "", TThostFtdcPwdFlagType BankPwdFlag = TThostFtdcPwdFlagType.THOST_FTDC_BPWDF_NoCheck, TThostFtdcPwdFlagType SecuPwdFlag = TThostFtdcPwdFlagType.THOST_FTDC_BPWDF_NoCheck, string OperNo = "", int RequestID = 0, int TID = 0, string LongCustomerName = "")
@@ -1427,7 +1427,7 @@ namespace HaiFeng
 
 				LongCustomerName = LongCustomerName,
 			};
-			return (loader.Invoke("ReqQueryBankAccountMoneyByFuture", typeof(DeleReqQueryBankAccountMoneyByFuture)) as DeleReqQueryBankAccountMoneyByFuture)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqQueryBankAccountMoneyByFuture", typeof(DeleReqQueryBankAccountMoneyByFuture)) as DeleReqQueryBankAccountMoneyByFuture)(_api, ref struc, this.nRequestID++);
 		}
 
 		#endregion

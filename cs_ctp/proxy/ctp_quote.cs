@@ -31,13 +31,13 @@ namespace HaiFeng
 		public delegate IntPtr DeleGetTradingDay(IntPtr api);
 		public delegate IntPtr DeleRegisterFront(IntPtr api, string pszFrontAddress);
 		public delegate IntPtr DeleRegisterNameServer(IntPtr api, string pszNsAddress);
-		public delegate IntPtr DeleRegisterFensUserInfo(IntPtr api, CThostFtdcFensUserInfoField pFensUserInfo);
+		public delegate IntPtr DeleRegisterFensUserInfo(IntPtr api,ref CThostFtdcFensUserInfoField pFensUserInfo);
 		public delegate IntPtr DeleSubscribeMarketData(IntPtr api, IntPtr pInstruments, int pCount);
 		public delegate IntPtr DeleUnSubscribeMarketData(IntPtr api, IntPtr pInstruments, int pCount);
 		public delegate IntPtr DeleSubscribeForQuoteRsp(IntPtr api, IntPtr pInstruments, int pCount);
 		public delegate IntPtr DeleUnSubscribeForQuoteRsp(IntPtr api, IntPtr pInstruments, int pCount);
-		public delegate IntPtr DeleReqUserLogin(IntPtr api, CThostFtdcReqUserLoginField pReqUserLoginField, int nRequestID);
-		public delegate IntPtr DeleReqUserLogout(IntPtr api, CThostFtdcUserLogoutField pUserLogout, int nRequestID);
+		public delegate IntPtr DeleReqUserLogin(IntPtr api, ref CThostFtdcReqUserLoginField pReqUserLoginField, int nRequestID);
+		public delegate IntPtr DeleReqUserLogout(IntPtr api,ref CThostFtdcUserLogoutField pUserLogout, int nRequestID);
 
 		#endregion
 		#region REQ函数
@@ -82,7 +82,7 @@ namespace HaiFeng
 				UserID = UserID,
 				LoginMode = LoginMode,
 			};
-			return (loader.Invoke("RegisterFensUserInfo", typeof(DeleRegisterFensUserInfo)) as DeleRegisterFensUserInfo)(_api, struc);
+			return (loader.Invoke("RegisterFensUserInfo", typeof(DeleRegisterFensUserInfo)) as DeleRegisterFensUserInfo)(_api, ref struc);
 		}
 
 		public IntPtr SubscribeMarketData(IntPtr pInstruments, int pCount)
@@ -121,7 +121,7 @@ namespace HaiFeng
 				ClientIPAddress = ClientIPAddress,
 				LoginRemark = LoginRemark,
 			};
-			return (loader.Invoke("ReqUserLogin", typeof(DeleReqUserLogin)) as DeleReqUserLogin)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqUserLogin", typeof(DeleReqUserLogin)) as DeleReqUserLogin)(_api, ref struc, this.nRequestID++);
 		}
 
 		public IntPtr ReqUserLogout(string BrokerID = "", string UserID = "")
@@ -131,7 +131,7 @@ namespace HaiFeng
 				BrokerID = BrokerID,
 				UserID = UserID,
 			};
-			return (loader.Invoke("ReqUserLogout", typeof(DeleReqUserLogout)) as DeleReqUserLogout)(_api, struc, this.nRequestID++);
+			return (loader.Invoke("ReqUserLogout", typeof(DeleReqUserLogout)) as DeleReqUserLogout)(_api, ref struc, this.nRequestID++);
 		}
 
 		#endregion
