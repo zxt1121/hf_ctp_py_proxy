@@ -34,3 +34,8 @@
         * 打开cs_ctp\proxy 项目编译.net封装
         * 打开cs_ctp\proxytest 项目测试.net封装
 
+## .net core 下使用说明
+* 当前版本版本基于海风版本修改(fork 2018年11月)，修改了对dll的引用方式，时期能在.net core下编译并运行
+* 当前的版本已经能在linux运行（centos 7.3环境 .net core 2.13)
+* 接口未全面测试，请谨慎使用。
+
