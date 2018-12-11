@@ -208,7 +208,7 @@ namespace quote_save
                 // todo 这里需要获得交易日日历的功能
                 time = time.AddDays(1);
             }
-            var path = $"data\\{id}\\{instrumentId}\\{time.ToString("yyyyMMdd")}.csv";
+            var path = $"data/{id}/{instrumentId}/{time.ToString("yyyyMMdd")}.csv";
             var fi = new FileInfo(path);
             if (!fi.Directory.Exists)
             {
