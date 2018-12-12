@@ -6,6 +6,23 @@
 * python 3.6+
 * 64位
 
+## .net core 下使用说明
+* 当前版本版本基于海风版本修改(fork 2018年11月)，修改了对dll的引用方式，时期能在.net core下编译并运行
+* 当前的版本已经能在linux运行（centos 7.3环境 .net core 2.13)
+* 接口未全面测试，请小心使用。
+
+### 测试demo执行
+* 在centos7.3 下安装好 .net core
+* git clone 项目
+* 先编译测试demo
+    * dotnet build cs_ctp/quote_save/
+* 复制 *.so 到执行目录
+    * cp dll/*.so cs_ctp/quote_save/bin/Debug/netcoreapp2.1
+* 执行测试demo
+    * cd cs_ctp/quote_save/
+    * dotnet run
+* 测试demo会接入上期所的模拟环境，获得当前交易的tick，demo只有在有效的交易时间段才会有数据返回。
+
 ## 使用说明
 * 运行 `pyton generate\\run.py` 生成所有文件
 * C++编译
@@ -33,4 +50,6 @@
         * `copy cs_ctp\*.cs cs_ctp\proxy\`
         * 打开cs_ctp\proxy 项目编译.net封装
         * 打开cs_ctp\proxytest 项目测试.net封装
+
+
 
